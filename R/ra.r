@@ -17,7 +17,8 @@ ra <- function(X) {
   require('blockra')
 
   matrix <- rbind(X, rep(0, length(X)))
-  rearranged <- blockra::ra(matrix)
+
+  rearranged <- blockra::ra(matrix, fix.first = FALSE, epsilon = 0)
   sums <- rowSums(rearranged)
   difference <- abs(sums[1] - sums[2])
 
