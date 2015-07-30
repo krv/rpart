@@ -1,3 +1,8 @@
+# setwd("C:/Users/kboudt/Dropbox/doctoraatKristofVerbeken/Rearrangement algorithm/rpart/R")
+
+source("greedy.R")
+source("differencing.R")
+
 numbers <- c(771, 121, 281, 854, 885, 734, 486, 1003, 83, 62)
 tests <- 1000
 
